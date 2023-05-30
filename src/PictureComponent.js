@@ -59,7 +59,7 @@ export const PictureComponent = (id) => {
          <div key={product.id}>
          <h2>{product.title}</h2>
           {product.images.map((image, index) => (
-            <img key={index} src={products[id].image} alt={`Image ${index + 1}`} />
+            <img key={index} src={image} alt={`Image ${index + 1}`} />
           ))}
           </div>  
       ))}
