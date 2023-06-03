@@ -56,14 +56,14 @@ const handleSelect = (selectedIndex, e) => {
     
 
  <div>
-        <h1>Product</h1>
+        
         {products.map((item, index) => (
           
           <div key={item.id}>
             <p>{item.title}</p>
 
             <Carousel
-              width="300px"
+              width="100px"
               height="300px"
               float="center"
               autoPlay={true}
