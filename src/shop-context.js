@@ -1,8 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import {API} from './products';
-import Structure from "./Structure"
-import { PictureComponent } from './PictureComponent';
-import Rating from '@mui/material/Rating';
+
 
 export const ShopContext=React.createContext(null);
 
