@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Slider from 'react-carousel';
+
 import { API } from './products.js';
 import Rating from '@mui/material/Rating';
 import { ShopContext } from './shop-context';
@@ -31,15 +31,7 @@ import { Carousel } from "react-responsive-carousel";
       });
   }, []);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
+  
 const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
       console.log(setIndex);
@@ -80,7 +72,7 @@ const handleSelect = (selectedIndex, e) => {
             <div><div className='rating'><Rating name="size-small" defaultValue={2} size="small" />{item.rating}
                   </div>
              </div>
-             <button className='addtocart' type='button' onClick={(e)=>AddToCart(id)}><h3>Add To Cart{cartItems[id] > 0 && <>({TotalCartItem})</>}</h3></button>
+             <button className='addtocart' type='button' onClick={(e)=>AddToCart(item.id)}><h3>Add To Cart{cartItems[id] > 0 && <>({TotalCartItem})</>}</h3></button>
 
             
           </div>

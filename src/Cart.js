@@ -47,7 +47,7 @@ const Cart = () => {
                 return(
                     <div className='separatecartiems-container'>
                        <div>
-                         <img src={images} alt={name}/>
+                         <img src={images[0]} alt={name}/>
                       </div>
                       <div><h3>{title}</h3></div>
                       <div><h4>${original_price}</h4>
