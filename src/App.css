@@ -204,3 +204,8 @@ a{
  .mainimagediv{
   display: flex;
  }
+ .shopdiv{
+  display: flex;
+  flex-wrap: wrap;
+
+ }

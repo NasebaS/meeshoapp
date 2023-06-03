@@ -55,7 +55,7 @@ const handleSelect = (selectedIndex, e) => {
   return (
     
 
- <div>
+ <div className='shopdiv'>
         
         {products.map((item, index) => (
           
@@ -63,7 +63,7 @@ const handleSelect = (selectedIndex, e) => {
             <p>{item.title}</p>
 
             <Carousel
-              width="100px"
+              width="300px"
               height="300px"
               float="center"
               autoPlay={true}
