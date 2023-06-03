@@ -21,7 +21,7 @@ const Shop = () => {
   // handle error
 }).then(products => {
   setProducts(products)
- 
+ console.log(products)
   // Do something with the list of tasks
 }).catch(error => {
   setError(error)
